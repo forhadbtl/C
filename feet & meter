@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(void)
+{
+   int choice;
+   float num;
+
+   printf("1: Feet to Meters \n2: Meters to Feet\n\n");
+   printf("                        Enter Choice:");
+   scanf("%d", &choice);
+   if(choice==1)
+   {
+       printf("Enter Feet Number:");
+       scanf("%f", &num);
+       printf("Meters: %f\n\n", num/3.28);
+   }
+  else if(choice==2)
+   {
+       printf("Enter Meters Number:");
+       scanf("%f", &num);
+       printf("Feet: %f\n\n", num*3.28);
+   }
+   else
+    printf("Something Wrong!!!\nPlease input a correct number\n\n");
+
+return 0;
+}
